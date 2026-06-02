@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chirag Sharma — Software Engineer</title>
+  <meta name="description" content="Personal portfolio of Chirag Sharma — Python developer specializing in Flask, web apps, and RESTful APIs." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── NAV ─────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#">CS<span class="dot">.</span></a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about"    class="nav-link">About</a></li>
+        <li><a href="#skills"   class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact"  class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <a class="btn-outline" href="https://github.com/ChiragXcode" target="_blank" rel="noopener">GitHub ↗</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── HERO  (scroll-sequenced frames) ──────────── -->
+  <section id="hero">
+    <div id="hero-sticky">
+      <canvas id="hero-canvas"></canvas>
+
+      <!-- text overlay -->
+      <div class="hero-overlay">
+        <p class="hero-tag mono">// python &middot; flask &middot; vibe coder &middot; web</p>
+        <h1 id="hero-title">
+          <span class="line">Building</span>
+          <span class="line grad" id="hero-word">Scalable</span>
+          <span class="line">Software</span>
+        </h1>
+        <p class="hero-sub">
+          Hi, I'm <strong>Chirag Sharma</strong> — software engineer at <em>ZixGenAi</em> &amp; a
+          <strong class="vibe">Vibe Coder</strong> who ships fast web apps, REST APIs
+          and AI-powered tools with Python &amp; Flask.
+        </p>
+        <div class="hero-cta">
+          <a class="btn-primary" href="#projects">View Projects</a>
+          <a class="btn-ghost"   href="#contact">Let's Talk</a>
+        </div>
+      </div>
+
+      <!-- scroll hint — aesthetic mouse icon -->
+      <div class="scroll-hint">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span>scroll</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ─────────────────────────────────────── -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">About <span class="grad">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a Python developer &amp; <strong class="vibe">Vibe Coder</strong> who loves building
+            scalable web apps, REST APIs, and AI-powered tools. Currently shipping at
+            <strong>ZixGenAi</strong>, I specialise in <strong>Flask</strong> and turn complex backend
+            ideas into clean, production-ready code.
+          </p>
+          <p>
+            I embrace the <em>vibe coding</em> mindset — move fast, iterate boldly, and let
+            creativity drive the architecture. From real-time chat apps to university calculators,
+            I build things that people actually use.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">10+</span>
+              <span class="stat-label">Public Repos</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">5+</span>
+              <span class="stat-label">Live Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">2+</span>
+              <span class="stat-label">Years Coding</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-card reveal">
+          <div class="card-glow"></div>
+          <img class="avatar" src="https://avatars.githubusercontent.com/u/151830477?v=4" alt="Chirag Sharma avatar" />
+          <h3>Chirag Sharma</h3>
+          <p class="mono card-role">Software Engineer @ ZixGenAi</p>
+          <div class="card-badges">
+            <span class="badge">Python</span>
+            <span class="badge">Flask</span>
+            <span class="badge">REST APIs</span>
+            <span class="badge vibe-badge">✦ Vibe Coder</span>
+            <span class="badge">HTML/CSS/JS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ─────────────────────────────────────── -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title reveal">Tech <span class="grad">Stack</span></h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal" style="--d:0s">
+          <div class="skill-icon">🐍</div>
+          <h4>Python</h4>
+          <p>Core language — scripting, automation, backend logic</p>
+        </div>
+        <div class="skill-card reveal" style="--d:.1s">
+          <div class="skill-icon">⚗️</div>
+          <h4>Flask</h4>
+          <p>Lightweight framework for building fast RESTful APIs</p>
+        </div>
+        <div class="skill-card reveal" style="--d:.2s">
+          <div class="skill-icon">🌐</div>
+          <h4>HTML / CSS / JS</h4>
+          <p>Frontend fundamentals — responsive, accessible UIs</p>
+        </div>
+        <div class="skill-card reveal" style="--d:.3s">
+          <div class="skill-icon">🗄️</div>
+          <h4>Databases</h4>
+          <p>SQLite, Supabase (PostgreSQL) — schema design &amp; queries</p>
+        </div>
+        <div class="skill-card reveal" style="--d:.4s">
+          <div class="skill-icon">🚀</div>
+          <h4>Deployment</h4>
+          <p>Vercel, GitHub Pages — CI/CD and live deployments</p>
+        </div>
+        <div class="skill-card reveal" style="--d:.5s">
+          <div class="skill-icon">🔧</div>
+          <h4>Git &amp; GitHub</h4>
+          <p>Version control, branching strategies, open-source contributions</p>
+        </div>
+        <div class="skill-card skill-vibe reveal" style="--d:.6s">
+          <div class="skill-icon">✦</div>
+          <h4>Vibe Coding</h4>
+          <p>AI-assisted rapid development — ship ideas fast, iterate boldly, build with flow</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ───────────────────────────────────── -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Featured <span class="grad">Projects</span></h2>
+      <p class="section-sub reveal">Live projects pulled directly from GitHub ↓</p>
+
+      <div class="projects-grid">
+        <article class="project-card reveal" style="--d:0s">
+          <div class="project-header">
+            <span class="project-lang" style="--lc:#f7df1e">JavaScript</span>
+            <div class="project-links">
+              <a href="https://tweet-web-app.vercel.app" target="_blank" rel="noopener">↗ Live</a>
+              <a href="https://github.com/ChiragXcode/Tweet-Web-App" target="_blank" rel="noopener">⌥ Code</a>
+            </div>
+          </div>
+          <h3 class="project-name">Tweet Web App</h3>
+          <p class="project-desc">A Twitter-inspired web application built with JavaScript. Create, post, and manage tweets with a clean modern interface.</p>
+          <div class="project-tags"><span>JavaScript</span><span>Vercel</span><span>Web App</span></div>
+        </article>
+
+        <article class="project-card reveal" style="--d:.1s">
+          <div class="project-header">
+            <span class="project-lang" style="--lc:#663399">CSS</span>
+            <div class="project-links">
+              <a href="https://modern-calculator-mu.vercel.app" target="_blank" rel="noopener">↗ Live</a>
+              <a href="https://github.com/ChiragXcode/Modern-Calculator" target="_blank" rel="noopener">⌥ Code</a>
+            </div>
+          </div>
+          <h3 class="project-name">Modern Calculator</h3>
+          <p class="project-desc">A sleek, modern calculator with clean UI/UX design. Handles arithmetic operations with beautiful CSS styling.</p>
+          <div class="project-tags"><span>CSS</span><span>HTML</span><span>JavaScript</span></div>
+        </article>
+
+        <article class="project-card reveal" style="--d:.2s">
+          <div class="project-header">
+            <span class="project-lang" style="--lc:#e34c26">HTML</span>
+            <div class="project-links">
+              <a href="https://todo-list-management-system.vercel.app" target="_blank" rel="noopener">↗ Live</a>
+              <a href="https://github.com/ChiragXcode/TODO-List-Management-System" target="_blank" rel="noopener">⌥ Code</a>
+            </div>
+          </div>
+          <h3 class="project-name">TODO List Management</h3>
+          <p class="project-desc">A full-featured task management system backed by a database. Create, update, and delete tasks with persistent storage.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>Database</span></div>
+        </article>
+
+        <article class="project-card reveal" style="--d:.3s">
+          <div class="project-header">
+            <span class="project-lang" style="--lc:#3572A5">Python</span>
+            <div class="project-links">
+              <a href="https://github.com/ChiragXcode/Public-Chat-Web-application" target="_blank" rel="noopener">⌥ Code</a>
+            </div>
+          </div>
+          <h3 class="project-name">Public Chat App</h3>
+          <p class="project-desc">Real-time public chat application where users join a shared room. Built with Flask &amp; WebSocket principles for live communication.</p>
+          <div class="project-tags"><span>Python</span><span>Flask</span><span>Real-time</span></div>
+        </article>
+
+        <article class="project-card reveal" style="--d:.4s">
+          <div class="project-header">
+            <span class="project-lang" style="--lc:#3572A5">Python</span>
+            <div class="project-links">
+              <a href="https://github.com/ChiragXcode/instagram-reel-downloader" target="_blank" rel="noopener">⌥ Code</a>
+            </div>
+          </div>
+          <h3 class="project-name">Instagram Reel Downloader</h3>
+          <p class="project-desc">A Python-powered tool to download Instagram reels programmatically. Demonstrates web scraping and automation skills.</p>
+          <div class="project-tags"><span>Python</span><span>Automation</span><span>Web Scraping</span></div>
+        </article>
+
+        <article class="project-card reveal" style="--d:.5s">
+          <div class="project-header">
+            <span class="project-lang" style="--lc:#663399">CSS</span>
+            <div class="project-links">
+              <a href="https://github.com/ChiragXcode/library_management_system" target="_blank" rel="noopener">⌥ Code</a>
+            </div>
+          </div>
+          <h3 class="project-name">Library Management System</h3>
+          <p class="project-desc">A complete library management web system for tracking books, members, and borrowing records with CRUD operations.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>CRUD</span></div>
+        </article>
+
+        <article class="project-card reveal" style="--d:.6s">
+          <div class="project-header">
+            <span class="project-lang" style="--lc:#e34c26">HTML</span>
+            <div class="project-links">
+              <a href="https://github.com/ChiragXcode/MJPRU-University-Calculator" target="_blank" rel="noopener">⌥ Code</a>
+            </div>
+          </div>
+          <h3 class="project-name">MJPRU University Calculator</h3>
+          <p class="project-desc">Percentage calculator for MJPRU university — converts SGPA &amp; CGPA to percentage. Helps thousands of students.</p>
+          <div class="project-tags"><span>HTML</span><span>JavaScript</span><span>Education</span></div>
+        </article>
+
+        <article class="project-card reveal" style="--d:.7s">
+          <div class="project-header">
+            <span class="project-lang" style="--lc:#663399">CSS</span>
+            <div class="project-links">
+              <a href="https://github.com/ChiragXcode/Public-Chat-Web-application" target="_blank" rel="noopener">⌥ Code</a>
+            </div>
+          </div>
+          <h3 class="project-name">Public Chat App</h3>
+          <p class="project-desc">A real-time public chat web application. Users can join and communicate in a shared room. Built with WebSocket principles.</p>
+          <div class="project-tags"><span>CSS</span><span>Real-time</span><span>WebSockets</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ─────────────────────────────────────── -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title reveal">Get In <span class="grad">Touch</span></h2>
+      <p class="section-sub reveal">Have a project in mind? I'd love to hear from you — drop a message and I'll get back within 24 hours.</p>
+
+      <div class="contact-wrapper reveal">
+
+        <!-- Left: Info cards -->
+        <div class="contact-info">
+          <a class="cinfo-card" href="mailto:sgolu6259@gmail.com">
+            <span class="cinfo-icon">✉️</span>
+            <div>
+              <span class="cinfo-label">Email</span>
+              <span class="cinfo-val">sgolu6259@gmail.com</span>
+            </div>
+          </a>
+          <a class="cinfo-card" href="https://github.com/ChiragXcode" target="_blank" rel="noopener">
+            <span class="cinfo-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </span>
+            <div>
+              <span class="cinfo-label">GitHub</span>
+              <span class="cinfo-val">@ChiragXcode</span>
+            </div>
+          </a>
+          <div class="cinfo-card cinfo-soon">
+            <span class="cinfo-icon">🚀</span>
+            <div>
+              <span class="cinfo-label">Portfolio v2</span>
+              <span class="cinfo-val">Deploying on Vercel — coming soon</span>
+            </div>
+          </div>
+          <div class="availability-badge">
+            <span class="avail-dot"></span>
+            Available for freelance &amp; full-time roles
+          </div>
+        </div>
+
+        <!-- Right: Contact form -->
+        <form
+          id="contact-form"
+          class="contact-form"
+          action="https://formsubmit.co/sgolu6259@gmail.com"
+          method="POST"
+        >
+          <!-- FormSubmit config (hidden) -->
+          <input type="hidden" name="_subject"  value="New message from Portfolio — ChiragXcode" />
+          <input type="hidden" name="_captcha"  value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="text"   name="_honey"    style="display:none" />
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-name">Your Name</label>
+              <input id="cf-name" type="text" name="name" placeholder="Rahul Verma" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="cf-email">Your Email</label>
+              <input id="cf-email" type="email" name="email" placeholder="rahul@example.com" required autocomplete="email" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="cf-subject">Subject</label>
+            <input id="cf-subject" type="text" name="subject" placeholder="Project collaboration / Freelance inquiry…" required />
+          </div>
+
+          <div class="form-group">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="5" placeholder="Tell me about your project, timeline, and budget…" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-send" id="btn-send">
+            <span class="btn-send-text">Send Message</span>
+            <span class="btn-send-icon">→</span>
+          </button>
+
+          <p class="form-note">📬 I usually reply within 24 hours.</p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────── -->
+  <footer>
+    <div class="container footer-inner">
+      <p class="mono">Built with <span class="grad">passion</span> by Chirag Sharma</p>
+      <p class="footer-copy">© 2024 ChiragXcode. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
